@@ -2,23 +2,28 @@
 <html>
   <head>
     <link rel="stylesheet" href="./style.css" />
+    <title>Palindrome App</title>
   </head>
+
   <body>
-    <div class="header">
-      <h2 style="margin:5px">Palindrome App</h2>
-      <input type="text" id="myInput" placeholder="Title...">
-      <span onclick="newElement()" class="addBtn">Add</span>
-    </div>
-    <ul id="myUL">
-      <li class="checked"></li>
-      <li></li>
-      <li></li>
-      <li class="checked"></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <button type="button" id="clear-list" onclick="removeAll()">Clear Items</button>
+    <div class="container">
+      <div> class="box">
+        <div> class="input">
+          <form id="myform">
+            <h1 style="margin:15px">Palindrome App</h1>
+            <h2 style="margin:7px">Check Words for Palindromes!</h2>
+            <input type="text" id="wordCollector" placeholder="Insert the word you want to check...">
+            <button type="submit" id="submitButton">Click to Check</button>
+            </div> class="displayResult">
+            <p>id="displayPanel">Palindrome Question Result Appears Here</p>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+      
+    
     <script src="PalindromeApp.js"></script>
   </body>
   </html>

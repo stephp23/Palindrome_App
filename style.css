@@ -4,7 +4,20 @@ css file body {
   max-width: 50%;
   background-color: silver;
 }
-* {
+.box {
+  width: 450px;
+  height: 450px;
+  border: 0.005px solid #ffffff;
+  border-width: 0.05px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #000000;
+  position: relative;
+  margin: auto;
+  padding: 30px;
+  color: #516be0;
+}
+
+//* {
   box-sizing: border-box;
 }
 ul {
@@ -20,42 +33,14 @@ ul li {
   font-size: 18px;
   transition: 0.2s;
   /* make the list items unselectable */
-  -webkit-user-select: none;
+  /* -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-/* Set zebra-stripes: all odd list items to a different color */
-ul li:nth-child(odd) {
-  background: #f9f9f9;
-}
-ul li:hover {
-  background: #ddd;
-}
-ul li.checked {
-  background: teal;
-  color: white;
-  text-decoration: line-through;
-}
-ul li.checked::before {
-  content: "";
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
-}
-/* Style the close button */
-.close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 12px 16px 12px 16px;
-}
+
+} */
+
 .close:hover {
   background-color: crimson;
   color: white;
@@ -66,12 +51,7 @@ ul li.checked::before {
   color: white;
   text-align: center;
 }
-.header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-input {
+p.inputWord {
   margin: 0;
   border: none;
   border-radius: 0;
@@ -80,32 +60,54 @@ input {
   float: left;
   font-size: 16px;
 }
-.addBtn {
-  padding: 10px;
-  width: 25%;
-  background: #d9d9d9;
-  color: #555;
-  float: left;
+
+#wordCollector {
+  width: 100%;
+  height: 30px;
+  color: #9b51e0;
+  border: 0.05px solid;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  border: none;
+  outline: 0;
+}
+
+::placeholder {
+  color: #516be0;
+  font: 'Roboto';
+  font-weight: 100;
+  padding-left: 10px;
+}
+
+#submitButton {
+  background-color: #9b51e0;
+  color: white;
+  width: 120px;
+  height: 40px;
+  border: 0.05px solid;
+  border-radius: 20px;
+  outline: 0;
+  margin-top: 50px;
+  margin-right: 50%;
+}
+
+button:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.displayResult {
+  margin: 40px;
+}
+
+
+/*#displayPanel {}*/
+
+.footer {
   text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 0;
-}
-.addBtn:hover {
-  background-color: #bbb;
-}
-#clear-list {
-  width: 30%;
-  font-weight: bold;
-  font-style: italic;
-  font-size: xx-large;
-  font-family: "Times New Roman";
-  margin: 40px 35%;
-  background-color: darkblue;
-  color: white;
-}
-#clear-list:hover {
-  background-color: blue;
-  color: white;
 }
