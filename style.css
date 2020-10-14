@@ -51,7 +51,7 @@ p.inputWord {
 }
 
 ::placeholder {
-  color: #516be0;
+  color: #000000;
   font: "Roboto";
   font-weight: 100;
   padding-left: 10px;
